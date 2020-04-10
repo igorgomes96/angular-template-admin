@@ -26,7 +26,14 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/metismenu/dist/metisMenu.js",
+              "src/libs/js/plugins/pace/pace.min.js",
+              "src/libs/js/plugins/datapicker/bootstrap-datepicker.js",
+              "src/libs/js/plugins/toastr/toastr.min.js",
+              "src/libs/js/plugins/wow/wow.min.js"
+            ]
           },
           "configurations": {
             "production": {

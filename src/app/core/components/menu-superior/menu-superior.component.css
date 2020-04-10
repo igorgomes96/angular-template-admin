@@ -1,0 +1,36 @@
+.navbar-collapse {
+    flex-grow: 0;
+  }
+  
+  .navbar-static-top {
+    justify-content: space-between;
+  }
+  
+  .navbar-brand {
+    background: #1ab394;
+    color: #fff;
+    padding: 15px 25px;
+    display: inline-block;
+    margin-right: 1rem;
+    white-space: nowrap;
+  }
+  
+  .left-nav-hidden .navbar-collapse {
+    flex-grow: 1;
+  }
+  
+  .left-nav-hidden .navbar-top-links li>a {
+    color: inherit;
+  }
+  
+  .left-nav-hidden .nav > li > a {
+    padding: 15px 10px;
+  }
+  
+  .left-nav-hidden .show .nav > li > a {
+    padding: 15px 20px;
+  }
+  
+  .navbar-top-links li {
+    display: inline;
+  }

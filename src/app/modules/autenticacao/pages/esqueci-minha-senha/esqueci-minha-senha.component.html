@@ -1,0 +1,38 @@
+<div class="passwordBox animated fadeInDown">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="ibox-content">
+
+                <h2 class="font-bold text-center">Solicitar Reset de Senha</h2>
+
+                <p>
+                    Informe seu e-mail e enviaremos um link para você recuperar seus acessos.
+                </p>
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <form class="m-t" role="form" (submit)="solicitarReset()" [formGroup]="form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" formControlName="email">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary block full-width m-b" [disabled]="form.invalid">Enviar Email de Recuperação</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            Copyright Sistema
+        </div>
+        <div class="col-md-6 text-right">
+            <small> &copy; 2020</small>
+        </div>
+    </div>
+</div>

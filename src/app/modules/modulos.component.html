@@ -1,0 +1,13 @@
+<h4>Módulos do Sistema</h4>
+
+<a class="btn btn-success m-r-sm" routerLink="dashboard"><span class="fa fa-dashboard"></span> Dashboard</a>
+<hr>
+<h4>Notificações</h4>
+<button class="btn btn-primary m-r-sm" (click)="exibirNotificacao()">Testar Notificação</button>
+<button class="btn btn-info" (click)="exibirModal()">Testar Modal</button>
+
+
+<ng-template #modalTeste>
+    <h4>Testando</h4>
+    <p>Algum conteúdo aleatório.</p>
+</ng-template>

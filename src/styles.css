@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./libs/css/bootstrap.min.css";
+@import "./libs/css/styles.css";
+@import "./libs/css/animate.css";
+@import "./libs/css/plugins/toastr/toastr.min.css";
+@import "./libs/css/plugins/datapicker/datepicker3.css";
+@import "~ladda/dist/ladda-themeless.min.css";
+@import "~font-awesome/css/font-awesome.css";
+.ibox .label {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+body.md-skin {
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.toast-success:before {
+    content: "" !important;
+}
+
+.toast-error:before {
+    content: "" !important;
+}
+
+.toast-info:before {
+    content: "" !important;
+}
+
+.toast-warning:before {
+    content: "" !important;
+}
+
+.wrapper-content {
+    padding-bottom: 60px !important;
+}

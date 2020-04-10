@@ -1,0 +1,35 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="block m-t-xs"> <strong class="font-bold">Usuário</strong> </span>
+                        <span class="text-muted text-xs block">Administrador </span> <!--b class="caret"></!--b> </span!-->
+                    </a>
+                </div>
+            </li>
+            <li *ngFor="let item of menu$ | async" [class.active]="item.active" [hidden]="!item.visible">
+                <a *ngIf="item.children == null" [routerLink]="[item.link]">
+                    <i [ngClass]="item.icon"></i>
+                    <span class="nav-label">{{ item.label }}</span>
+                    <span class="fa arrow" *ngIf="item.children != null"></span>
+                </a>
+                <a *ngIf="item.children != null" (click)="item.active = !item.active">
+                    <i [ngClass]="item.icon"></i>
+                    <span class="nav-label">{{ item.label }}</span>
+                    <span class="fa arrow" *ngIf="item.children != null"></span>
+                </a>
+                <ul class="nav nav-second-level" *ngIf="item.children != null" [ngClass]="item.active ? 'collapse in' : 'collapse'">
+                    <li *ngFor="let sub of item.children" [class.active]="sub.active">
+                        <a [routerLink]="[item.link + sub.link]">{{ sub.label }}</a>
+                    </li>
+                </ul>
+            </li>
+  
+        </ul>
+  
+    </div>
+  </nav>
+  
+  
